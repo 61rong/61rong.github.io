@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>liu</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="images/liudelogo.ico"/>
+<!--引入字体Montserrat（标题）+ Roboto（正文） -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap">
+<script defer src="https://events.vercount.one/js"></script>
+<script type="text/javascript">
+        // 移动端设备检测
+        function isMobile() {
+            var ua = navigator.userAgent;
+            // 常见移动端关键词（Android、iPhone、iPad、iOS、Windows Phone、UC浏览器等）
+            if (ua.indexOf("Android") > -1 ||   // Android 手机
+                ua.indexOf("iPhone") > -1 ||    // iPhone
+                ua.indexOf("iPad") > -1 ||      // iPad
+                ua.indexOf("iPod") > -1 ||      // iPod
+                ua.indexOf("Windows Phone") > -1 || // Windows Phone
+                ua.indexOf("Mobile") > -1) {    // 其他移动设备
+                return true;
+            }
+            return false;
+        }
+
+        // 判断并跳转到移动端地址
+        if (isMobile()) {
+            // 如果当前不在移动端域名，则跳转
+            if (window.location.href.indexOf("m.liudewangzhan.com") === -1) {
+                window.location.href = "mindex.html"; 
+            }
+        }
+        if (window.innerWidth <= 768) {
+    	window.location.href = "mindex.html"; 
+        }
+
+</script>
+<link rel="stylesheet" type="text/css" href="liudewangzhan.css" />
+</head>
+
+
+<body id="body" class="body-btn gundong">
+<nav class='window ' id='welcome'>
+	<div class='title-bar' >
+ 		<span>WELCOME</span>
+            	<button type="button" id="btn" class="close-btn">X</button>
+	</div>
+	<div class="window-body">
+	    <p>HELLO</p>
+	    <p>welcome to Liu de wang zhan.com</p>
+	    <p>欢迎来到liu的网站</p>
+            <button id='ok' class="win-btn">ok</button>
+        </div>
+</nav>
+<div class="window hidden" id="error"  >
+	<div class='title-bar ' >
+ 		<span>ERROR</span>
+            	<button type="button"   class="close-btn">X</button>
+	</div>
+	<div class="window-body">
+	    <p>error</p>
+	    <p>something can't be found</p>
+            <button  class="win-btn">ok</button>
+            </div>
+</div>
+<div id="wcomputer" class="window hidden">
+	<div class='title-bar' >
+ 		<span>my computer</span>
+            	<button type="button" id="combtn" class="close-btn">X</button>
+	</div>
+	<div class="window-body layout" style="gap: 30%">
+	<aside class="col-left">
+	    <p>welcome to Liu de wang zhan.com</p>
+	    <p>The server is running fine.</p>
+	    <p>服务器正常运行</p>
+	    <canvas id="serve" width="100px" height="15px"></canvas>
+	    <p>网站总访问量为<span id="vercount_value_site_pv">Loading</span>次</p>
+	    <br/> 
+            <p>网站总访问人数为<span id="vercount_value_site_uv">Loading</span>人.</p>
+	</aside>
+ 	<main class="col-right">
+		<img id="myserve" src="images/service.png"/>
+	</main>
+        </div>
+</div>
+<div id="win-rub" class="window hidden">
+	<div class='title-bar' >
+ 		<span>Rubbish</span>
+            	<button type="button" id="rubbtn" class="close-btn">X</button>
+	</div>
+	<div class="window-body " >
+	    <p>there is nothing</p>
+	    <canvas id="serve" width="100px" height="15px"></canvas>
+	    </div>
+</div>
+
+<!--************Study**********-->
+<div id="win-stu" class="window hidden">
+	<div class='title-bar' >
+ 		<span>Study</span>
+            	<button type="button" id="stubtn" class="close-btn">X</button>
+	</div>
+	<div class="window-body " style="overflow-y: auto; max-height: 95%; scrollbar-width: none; " >
+	    <div>
+		<h1 style="color:#1A1A2E">Learn something </h1>
+	</div>
+	<hr />
+	<h4 style="color:#7A7A8C;white-space: pre-wrap">"I am always ready to learn although I do not always like being taught." 
+															——Winston Churchill</h4>
+	<section class="compare">
+		<div >
+			<h3>123456789</h3>
+			<p>这里以后会放一些东西</p>
+			<p>可能是函数计算器，电路模拟或者仿真实验室,我还没想好</p>
+		</div>
+		<div >
+			<img style="height: 120vh; width: auto;" src="images/tongxindasha.png">
+		</div>
+	</section>
+	 </div>
+</div>
+<!--*************DIY*************-->
+<div id="win-diy" class="window hidden">
+	<div class='title-bar' >
+ 		<span>DIY</span>
+            	<button type="button" id="diybtn" class="close-btn">X</button>
+	</div>
+	<div class="window-body " style="overflow-y: auto; max-height: 95%; scrollbar-width: none; " >
+	    	<div>
+		<h1 style="color:#1A1A2E">DIY</h1>
+		</div>
+		<hr />
+		<h4 style="color:#7A7A8C;white-space: pre-wrap"> "Technological innovation is the most effective way to solve the world's problems."
+														                               —— Bill Gates</h4>
+		<div style="display: flex; justify-content: flex-end;">
+		<img width="466" height="184" src="images/lieche.png">
+		</div>
+		<h3>这里会放我的DIY....................</h3>
+	</div>
+</div>
+
+<!--**************About**********-->
+<div id="win-abo" class="window hidden">
+	<div class='title-bar' >
+ 		<span>About</span>
+            	<button type="button" id="abobtn" class="close-btn">X</button>
+	</div>
+	<div class="window-body " style="overflow-y: auto; max-height: 95%; scrollbar-width: none; " >
+	    <div>
+		<h1 style="color:#1A1A2E">Introduction</h1>
+		</div>
+		<hr />
+		<h4 style="color:#7A7A8C;white-space: pre-wrap"> ---Introduction---介绍---</h4>
+		<div style="display: flex; justify-content: flex-end;">
+		</div>
+		<h2 style="white-space: pre-wrap"> welcome to liudewangzhan.
+		欢迎来到刘的网站</h2>
+		 <p> 我们的网站经过了大概一个月的开发,当时看到rainmorime的网站,也想做一个</p>
+		<br/>
+		<section class="compare">
+			<div class="card">
+				<br/>
+				<img style="width: 40vw; height: auto;" src="images/raincom.PNG">
+				<div class="card-body">
+					<h3>rainmorime的网站</h3>
+				</div>
+			</div>
+	
+			<div class="card">
+				<br/>
+				<img style="width: 40vw; height: auto;" src="images/liuwang.PNG">
+				<div class="card-body">
+					<h3>liu的网站</h3>
+					<p>只能说适老化做的很不错</p>
+				</div>
+			</div>
+		</section>
+		<br/>
+		<div class="card">
+				<div class="card-body">
+					<h3>我是61rong</h3>
+					<p style="color:#7A7A8C">屎山代码制造者</p>
+					<p>欢迎到我的github主页</p>
+				
+				</div>
+		</div>
+
+	    </div>
+</div>
+
+
+
+<div id="windows" class="layout hidden">
+  <aside class="col-left">
+		<div id="computer" class="item" draggable="true" ondragstart="return dragStart(event)">
+			<button type="button" id="mycomputer" class="win-btn">
+				<img src="images/computer.png"width="98" height"117"/>
+			</button>
+		</div>
+		<div id="clear" class="item" ondragover="return dragOver(event)" ondrop="return dragDrop(event)">
+			<button type="button" id="rubbish" class="win-btn"><img src="images/rubbish.png"
+ 				width="98" height"117"/></button>
+		</div>
+   </aside>
+  <main class="col-right">
+		<button type="button" id="study" class="win-btn item">
+			<p>study</p>
+			<canvas id="hanshu" height="50px" width="60px"></canvas>		
+		</button>
+		<button type="button" id="diy" class="win-btn item">
+			<p>DIY</p>
+			<img id="chuizi" width="51px" height="27px" src="images/chuizi.png">
+			<img id="tiezhan" width="44px" height="36px" src="images/tiezhan-2.png" >
+		</button>
+		<button type="button" id="about" class="win-btn item">
+			<p>about</p>
+			<img id="info" width="50px" height="50px" src="images/info.png" >
+		</button>
+	
+   </main>
+</div>
+<script>
+	var button=document.getElementById('btn');
+	var windows=document.getElementById('windows');
+	var close=document.getElementById('welcome');
+	var body=document.getElementById('body');
+	var err=document.getElementById('error');
+	var mycomputer=document.getElementById('mycomputer');
+	var rubbish=document.getElementById('rubbish');
+
+
+	var canvas = document.getElementById("hanshu");
+	var canser = document.getElementById("serve");
+	const ctx = canvas.getContext('2d');
+	const cans = canser.getContext('2d');
+
+
+
+	button.addEventListener('click',function(){
+		close.classList.add('hidden'); 
+		body.classList.remove('body-btn'); 
+		windows.classList.remove('hidden'); 
+		});
+	var button=document.getElementById('ok');
+	button.addEventListener('click',function(){
+		close.classList.add('hidden'); 
+		body.classList.remove('body-btn');  
+		windows.classList.remove('hidden'); 
+		});   
+
+	let progress = -45;
+	let jindu = 0;
+
+	// 1. 计算设备像素比，解决模糊
+	const dpr = window.devicePixelRatio || 1;
+	 // 2. 获取 canvas 的「显示尺寸」（占半屏），存入实际缓冲区
+        	function setupCanvas() {
+            		// 取得 CSS 显示尺寸
+            		const displayWidth = window.innerWidth * 0.5;
+            		const displayHeight = window.innerHeight;
+
+            		// 实际像素缓冲区 = 显示尺寸 × dpr（这样才能高清）
+            		canvas.width = displayWidth * dpr;
+            		canvas.height = displayHeight * dpr;
+
+           	 	// 让 CSS 尺寸始终等于显示尺寸（占半屏）
+            		canvas.style.width = displayWidth + 'px';
+            		canvas.style.height = displayHeight + 'px';
+		// 之后所有绘制坐标、尺寸都按「逻辑显示尺寸」来写
+            		ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+		ctx.font = '40px Verdana'; 
+        	}
+
+	function serve(){
+		let jindu = 0;
+		cans.beginPath();
+		cans.strokeStyle = 'black';
+		cans.lineWidth = 2;
+		cans.strokeRect(0, 0, 100, 15);	
+		function jindutiao(){
+			cans.fillStyle = '#008080';
+			cans.clearRect(1, 1, 98, 13);
+			cans.fillRect(1, 1, jindu, 13);
+				if (jindu < 98){
+					jindu += 2;
+					requestAnimationFrame(jindutiao);
+				}else{
+					jindu = 0;
+					requestAnimationFrame(jindutiao);
+				}
+			}
+		jindutiao();
+		}
+	function hanshu(){
+		ctx.beginPath();
+		//study里的函数
+		ctx.lineWidth=1;
+		//x轴
+		ctx.moveTo(0, 25);
+		ctx.lineTo(50, 25);
+		//y轴
+		ctx.moveTo(5, 0);
+		ctx.lineTo(5, 50);
+
+		ctx.moveTo(5, 25);
+		ctx.ellipse(10,25,5,20,Math.PI,0, Math.PI);
+		ctx.ellipse(20,25,5,20,Math.PI,0, Math.PI,true);
+		ctx.ellipse(30,25,5,20,Math.PI,0, Math.PI);
+		ctx.ellipse(40,25,5,20,Math.PI,0, Math.PI,true);
+		ctx.stroke();
+
+		ctx.clearRect(50,0,progress,24);
+		ctx.clearRect(50,26,progress,23);
+			if (progress < 0){
+				progress += 2;
+				requestAnimationFrame(hanshu);//重新调用hanshu不要改了，要不然光擦不画
+			}else{
+				progress = -42;
+				requestAnimationFrame(hanshu);
+			}
+		
+	}
+	serve();
+	hanshu();
+
+		/*// 4. 窗口尺寸变化时重新适配（保证始终占半屏＋高清）
+        	window.addEventListener('resize', () => {
+            		setupCanvas();
+            		
+        	});*/
+	function tourl(){
+		//点击后跳转URL
+		document.addEventListener('mousemove', (e) => {
+			mousemoveX = e.clientX;
+			mousemoveY = e.clientY;//获取鼠标位置
+		})
+		function moumove(){
+			console.info(`         ${mousemoveX} , ${mousemoveY}`);
+			if (mousemoveX >=1040 && mousemoveX <=1250){
+				
+			}
+			if (mousemoveX >=1251 && mousemoveX <=1400){
+				
+			}
+			if (mousemoveX >=1401 && mousemoveX <=1550){
+				 
+			}
+				requestAnimationFrame(moumove);//重复执行时防止卡顿
+			}
+		requestAnimationFrame(moumove);
+		document.addEventListener('click', function(clickevent) {
+  		var coordinateX = event.clientX;
+  		var coordinateY = event.clientY;
+
+  		console.log('可视区坐标：', coordinateX, coordinateY);
+		if (coordinateX >=1040 && coordinateX <=1250){
+			window.location.href = "liudestudy.html"; 
+		}
+		if (coordinateX >=1251 && coordinateX <=1400){
+			window.location.href = "liudediy.html"; 
+		}
+		if (coordinateX >=1401 && coordinateX <=1550){
+			window.location.href = "aboutliu.html"; 
+		}
+		if (coordinateX >=1551 ){
+			console.log('123');
+		}
+		});
+		
+	}
+	var study=document.getElementById('study');
+	var diy=document.getElementById('diy');
+	var about=document.getElementById('about');
+
+	var wcomputer=document.getElementById('wcomputer');
+	var combtn=document.getElementById('combtn');
+	var winrub=document.getElementById('win-rub');
+	var rubbtn=document.getElementById('rubbtn');
+	var winstu=document.getElementById('win-stu');
+	var stubtn=document.getElementById('stubtn');
+	var windiy=document.getElementById('win-diy');
+	var diybtn=document.getElementById('diybtn');
+	var winabo=document.getElementById('win-abo');
+	var abobtn=document.getElementById('abobtn');
+
+
+	mycomputer.addEventListener('click', (e) => {
+  		close.classList.add('hidden'); 
+		body.classList.add('body-btn'); 
+		windows.classList.add('hidden'); 
+		wcomputer.classList.remove('hidden');
+	});
+	combtn.addEventListener('click',function(){ 
+		body.classList.remove('body-btn'); 
+		wcomputer.classList.add('hidden');
+		windows.classList.remove('hidden');
+		});
+	rubbish.addEventListener('click', (e) => {
+  		close.classList.add('hidden'); 
+		body.classList.add('body-btn'); 
+		windows.classList.add('hidden'); 
+		winrub.classList.remove('hidden');
+	});
+	rubbtn.addEventListener('click',function(){ 
+		body.classList.remove('body-btn'); 
+		winrub.classList.add('hidden');
+		windows.classList.remove('hidden');
+		});
+
+	study.addEventListener('click', (e) => {
+  		close.classList.add('hidden'); 
+		body.classList.add('body-btn'); 
+		windows.classList.add('hidden'); 
+		winstu.classList.remove('hidden');
+		body.classList.remove('gundong');
+	});
+	stubtn.addEventListener('click',function(){ 
+		body.classList.remove('body-btn'); 
+		winstu.classList.add('hidden');
+		windows.classList.remove('hidden');
+		body.classList.add('gundong');
+		});
+	diy.addEventListener('click', (e) => {
+  		close.classList.add('hidden'); 
+		body.classList.add('body-btn'); 
+		windows.classList.add('hidden'); 
+		windiy.classList.remove('hidden');
+		body.classList.remove('gundong');
+	});
+	diybtn.addEventListener('click',function(){ 
+		body.classList.remove('body-btn'); 
+		windiy.classList.add('hidden');
+		windows.classList.remove('hidden');
+		body.classList.add('gundong');
+		});
+	about.addEventListener('click', (e) => {
+  		close.classList.add('hidden'); 
+		body.classList.add('body-btn'); 
+		windows.classList.add('hidden'); 
+		winabo.classList.remove('hidden');
+		body.classList.remove('gundong');
+	});
+	abobtn.addEventListener('click',function(){ 
+		body.classList.remove('body-btn'); 
+		winabo.classList.add('hidden');
+		windows.classList.remove('hidden');
+		body.classList.add('gundong');
+		});
+
+
+	function dragStart(ev) {
+    		ev.dataTransfer.effectAllowed = 'move';
+    		ev.dataTransfer.setData("text/plain", ev.target.getAttribute('id'));
+    		return true;
+  	}
+	function dragOver(ev) {
+    		ev.preventDefault();   // 必须阻止默认行为，否则无法放置
+    		return true;
+  	}
+	function dragDrop(ev) {
+		ev.preventDefault();
+    		var src = ev.dataTransfer.getData("text/plain");
+    		ev.stopPropagation();
+		windows.classList.add('hidden'); 
+		err.classList.remove('hidden'); 
+		close.classList.add('hidden'); 
+		body.classList.add('body-btn');
+    		return false;
+  	}
+
+
+</script>
+		
+</body>
+</html>

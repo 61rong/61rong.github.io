@@ -1,0 +1,79 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>liu</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="images/liudelogo.ico"/>
+<style>
+	h1, h2, h3, h4, h5, h6, p {
+  		font-family: 'Montserrat', sans-serif;  /* 标题用 Montserrat */
+  		font-weight: 700;
+  		color: #1A1A2E;
+	}
+	p{
+		white-space: pre-wrap;
+	}
+	a{
+		font-size: clamp(5rem, 8vw, 10rem);
+		font-family: 'Montserrat', sans-serif;  /* 标题用 Montserrat */
+  		color: #1A1A2E;
+		text-decoration: none;
+	}
+	.compare{
+		display: grid;
+		grid-template-columns : repeat(2, 1fr);
+		gap: 24px;
+		max-width: 40px auto;
+		padding: 0 20px;
+	}
+	.card{
+		border: 1px solid #e5e7eb;
+		border-radius: 12px;
+		overflow: hidden;
+		background: #fff;
+		transition: transform .2s, box-shadow .2s;
+	}
+	.card:hover{
+		transform: translateY(-4px);
+		box-shadow: 0 12px 24px rgba(0, 0, 0, .08);
+	}
+	.card-body { 
+		padding: 20px; 
+	} 
+
+	@media (max-width: 640px) {
+		.compare {
+			grid-template-columns: 1fr;
+		}
+	}
+	@keyframes slide {
+  		from { transform: translateY(-200px); }
+  		to   { transform: translateY(0px); }
+	}
+	
+	body {
+		background-image: url('images/tongxindasha_3.jpg');
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		background-attachment: fixed;
+
+	}
+	img {
+  		animation: slide 1.2s ease-in forwards ;
+	}
+</style>
+</head>
+
+</head>
+<body >
+	
+	<img style="position: relative; top: 160px; left: -10px;" width="800" height="310" src= "images/tit.png ">
+	<div style="position: relative; top: 160px; left: 20px;">
+	<a href="maboutliu.html">ABout liu</a>
+	<br/>
+	<a href="mliustudy.html">Study</a>
+	<br/>
+	<a href="mliudediy.html">DIY</a>
+	</div>
+</body>
+</html>

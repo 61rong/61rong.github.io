@@ -1,0 +1,211 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	background:#008080;/*鸭绿色*/
+	font-size:20px;
+	height:100vh;
+	display:flex;
+	overflow:hidden;
+
+}
+.gundong{
+	
+}
+.body-btn{
+	align-items:center;/*垂直居中*/
+	justify-content:center;/*水平居中*/
+}
+.layout {
+  display: flex;
+  gap: 70%;              /* 两列间距 */
+  min-height: 100vh;      /* 撑满屏幕高度，可选 */
+  padding: 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.col-left,
+.col-right {
+  display: flex;
+  flex-direction: column; /* 竖列 */
+  gap: 6px;
+}
+.col-left  { width: 240px; flex-shrink: 0; }   /* 左列固定宽 */
+.col-right { flex: 1; }                          /* 右列自适应 */
+.window{
+	background:#c0c0c0;
+	width:420px;/*左上白，右下深灰*/
+	border:2px solid;
+	border-color:#ffffff,#808080,#808080,#ffffff;
+	box-shadow: 1px 1px 0px #404040;
+}
+.title-bar{
+	background:#000080;/*灰色*/
+	color:#ffffff;
+	psdding:4px 6px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-weight:bold;/*加粗*/
+	letter-spacing:0.5px;/*字间距*/
+	border：1px solid;
+	border-color:#ffffff;/*白色*/
+}
+.title-bar-text{
+	display:flex;
+	align-items:center;
+	gap:6px;
+}
+.title-bar-text img{
+	width:16px;
+	height:16px;
+	background:silver;
+	display:inline-block;
+}
+.close-btn{
+	background:#c0c0c0;/*灰色*/
+	color:#000;
+	border-color:#ffffff,#808080,#808080,#ffffff;
+	width:22px;
+	height:22px
+	text-align:center;
+	line-height:18px;
+	font-width:bold;
+	font-size:12px;
+	cursor:pointer;
+            	border: 2px solid #ffffff;/*白*/
+            	border-right-color: #000000;
+            	border-bottom-color: #000000;/*黑*/
+}
+.close-btn:active {
+            border: 2px solid #000000;
+            border-right-color: #ffffff;
+            border-bottom-color: #ffffff;
+}
+.error-window {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            background: #c0c0c0; /* Win95经典灰色 */
+            border: 2px solid #ffffff;
+            border-right-color: #000000;
+            border-bottom-color: #000000;
+            box-shadow: 1px 1px 0 #808080;/*浅灰色*/
+}
+.win-btn {
+            background: #c0c0c0;
+            border: 2px solid #ffffff;
+            border-right-color: #000000;
+            border-bottom-color: #000000;
+            padding: 2px 4px;
+            font-family: inherit;
+            font-size: 12px;
+            cursor: pointer;
+}
+.win-btn:active {
+            border: 2px solid #000000;
+            border-right-color: #ffffff;
+            border-bottom-color: #ffffff;
+}
+.window-body {
+            padding: 16px;
+            text-align: center;
+            font-size: 15px;
+            color: #000000;
+}
+.hidden { 
+	display: none;
+ }
+#wcomputer,
+#win-rub,
+#win-stu,
+#win-diy,
+#win-abo{
+	width: 100%;
+	height: 100%;
+}
+h1, h2, h3, h4, h5, h6, a {
+  		font-family: 'Montserrat', sans-serif;  /* 标题用 Montserrat */
+  		font-weight: 700;
+  		color: #1A1A2E;
+}
+
+@keyframes spin {
+    0%{ transform: rotate(0deg); }
+    50%{ transform: rotate(60deg); }
+    100%{ transform: rotate(0deg); }
+}
+@keyframes rotation {
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+@keyframes nav-line {
+        0%{ stroke-dashoffset: 1200; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 1200; }
+}
+#chuizi {
+    animation: spin 2s ease-in-out infinite;
+}
+#chilun{
+    animation: rotation 2s ease-in-out infinite;
+}
+#myserve{
+	height: 95%;
+	width: auto;
+}
+.nav-line{
+    stroke-dasharray: 1800;   /* 设成大于等于线长的值 */
+    stroke-dashoffset: 2500;  /* 起点把线完全隐藏 */
+    animation: nav-line 2s ease infinite;
+    stroke:  "white";
+    stroke-width: 2;
+    fill: none;
+    z-index: 10;   /* 较大的值 = 更靠上 */
+}
+.canvas-wrap {
+  position: relative;   /* SVG 的定位参照 */
+  
+}
+.deco {
+  position: absolute;
+  top: 0;
+  right: 0;             /* 贴右边缘 */
+  height: 100%;         /* 纵向撑满 canvas */
+  width: auto;          /* 宽度按 viewBox 比例自动算 */
+  aspect-ratio: 750 / 1000;  /* 保险起见显式声明比例 */
+  pointer-events: none; /* 关键：不挡 canvas 的鼠标事件 */
+  z-index: 1;           /* 盖在 canvas 上；canvas 默认 z-index:auto */
+}
+.compare{
+		display: grid;
+		grid-template-columns : repeat(2, 1fr);
+		gap: 24px;
+		max-width: 40px auto;
+		padding: 0 20px;
+}
+.card{
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	overflow: hidden;
+	background: #fff;
+	transition: transform .2s, box-shadow .2s;
+}
+.card:hover{
+	transform: translateY(-4px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, .08);
+}
+.card-body { 
+	padding: 20px; 
+} 
+
+@media (max-width: 640px) {
+	.compare {
+		grid-template-columns: 1fr;
+	}
+}

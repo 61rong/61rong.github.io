@@ -1,0 +1,67 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>liu</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="images/liudelogo.ico">
+<!-- 引入现代简洁字体：Montserrat（标题）+ Roboto（正文） -->
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap">
+<style>
+	h1, h2, h3, h4, h5, h6, p {
+  		font-family: 'Montserrat', sans-serif;  /* 标题用 Montserrat */
+  		font-weight: 700;
+  		color: #1A1A2E;
+	}
+	p{
+		white-space: pre-wrap;
+		font-size: clamp(2rem, 2.5vw, 5rem);
+	}
+	.compare{
+		display: grid;
+		grid-template-columns : repeat(2, 1fr);
+		gap: 24px;
+		max-width: 40px auto;
+		padding: 0 20px;
+	}
+	.card{
+		border: 1px solid #e5e7eb;
+		border-radius: 12px;
+		overflow: hidden;
+		background: #fff;
+		transition: transform .2s, box-shadow .2s;
+	}
+	.card-body { 
+		padding: 20px; 
+	} 
+
+	@media (max-width: 640px) {
+		.compare {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+</head>
+
+<body style='background:#F7F8FA;'>
+	<div>
+		<img width="1200" height="477" src="images/liustudy.png">
+	</div>
+	<hr style="width : 60%"/>
+	<div class="card">
+			
+			<div class="card-body">
+				<p>Study</p>
+				<br />
+				<br />
+				<p>这里将会展示一些资料供各位参考</p>
+			</div>
+			<div class="card-body">
+				<p>具体做什么还没想好</p>
+				<p>我打算做函数计算器，仿真电路分析或者仿真实验室</p>
+			</div>
+	</div>
+	
+	
+</body>
+</html>
