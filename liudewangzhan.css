@@ -5,7 +5,7 @@
 	box-sizing:border-box;
 }
 body{
-	background:#008080;/*Ñ¼ÂÌÉ«*/
+	background:#008080;/*é¸­ç»¿è‰²*/
 	font-size:20px;
 	height:100vh;
 	display:flex;
@@ -16,13 +16,13 @@ body{
 	
 }
 .body-btn{
-	align-items:center;/*´¹Ö±¾ÓÖĞ*/
-	justify-content:center;/*Ë®Æ½¾ÓÖĞ*/
+	align-items:center;/*å‚ç›´å±…ä¸­*/
+	justify-content:center;/*æ°´å¹³å±…ä¸­*/
 }
 .layout {
   display: flex;
-  gap: 70%;              /* Á½ÁĞ¼ä¾à */
-  min-height: 100vh;      /* ³ÅÂúÆÁÄ»¸ß¶È£¬¿ÉÑ¡ */
+  gap: 70%;              /* ä¸¤åˆ—é—´è· */
+  min-height: 100vh;      /* æ’‘æ»¡å±å¹•é«˜åº¦ï¼Œå¯é€‰ */
   padding: 16px;
   box-sizing: border-box;
   width: 100%;
@@ -30,29 +30,29 @@ body{
 .col-left,
 .col-right {
   display: flex;
-  flex-direction: column; /* ÊúÁĞ */
+  flex-direction: column; /* ç«–åˆ— */
   gap: 6px;
 }
-.col-left  { width: 240px; flex-shrink: 0; }   /* ×óÁĞ¹Ì¶¨¿í */
-.col-right { flex: 1; }                          /* ÓÒÁĞ×ÔÊÊÓ¦ */
+.col-left  { width: 240px; flex-shrink: 0; }   /* å·¦åˆ—å›ºå®šå®½ */
+.col-right { flex: 1; }                          /* å³åˆ—è‡ªé€‚åº” */
 .window{
 	background:#c0c0c0;
-	width:420px;/*×óÉÏ°×£¬ÓÒÏÂÉî»Ò*/
+	width:420px;/*å·¦ä¸Šç™½ï¼Œå³ä¸‹æ·±ç°*/
 	border:2px solid;
 	border-color:#ffffff,#808080,#808080,#ffffff;
 	box-shadow: 1px 1px 0px #404040;
 }
 .title-bar{
-	background:#000080;/*»ÒÉ«*/
+	background:#000080;/*ç°è‰²*/
 	color:#ffffff;
 	psdding:4px 6px;
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	font-weight:bold;/*¼Ó´Ö*/
-	letter-spacing:0.5px;/*×Ö¼ä¾à*/
-	border£º1px solid;
-	border-color:#ffffff;/*°×É«*/
+	font-weight:bold;/*åŠ ç²—*/
+	letter-spacing:0.5px;/*å­—é—´è·*/
+	borderï¼š1px solid;
+	border-color:#ffffff;/*ç™½è‰²*/
 }
 .title-bar-text{
 	display:flex;
@@ -66,7 +66,7 @@ body{
 	display:inline-block;
 }
 .close-btn{
-	background:#c0c0c0;/*»ÒÉ«*/
+	background:#c0c0c0;/*ç°è‰²*/
 	color:#000;
 	border-color:#ffffff,#808080,#808080,#ffffff;
 	width:22px;
@@ -76,9 +76,9 @@ body{
 	font-width:bold;
 	font-size:12px;
 	cursor:pointer;
-            	border: 2px solid #ffffff;/*°×*/
+            	border: 2px solid #ffffff;/*ç™½*/
             	border-right-color: #000000;
-            	border-bottom-color: #000000;/*ºÚ*/
+            	border-bottom-color: #000000;/*é»‘*/
 }
 .close-btn:active {
             border: 2px solid #000000;
@@ -91,11 +91,11 @@ body{
             left: 50%;
             transform: translate(-50%, -50%);
             width: 320px;
-            background: #c0c0c0; /* Win95¾­µä»ÒÉ« */
+            background: #c0c0c0; /* Win95ç»å…¸ç°è‰² */
             border: 2px solid #ffffff;
             border-right-color: #000000;
             border-bottom-color: #000000;
-            box-shadow: 1px 1px 0 #808080;/*Ç³»ÒÉ«*/
+            box-shadow: 1px 1px 0 #808080;/*æµ…ç°è‰²*/
 }
 .win-btn {
             background: #c0c0c0;
@@ -130,7 +130,7 @@ body{
 	height: 100%;
 }
 h1, h2, h3, h4, h5, h6, a {
-  		font-family: 'Montserrat', sans-serif;  /* ±êÌâÓÃ Montserrat */
+  		font-family: 'Montserrat', sans-serif;  /* æ ‡é¢˜ç”¨ Montserrat */
   		font-weight: 700;
   		color: #1A1A2E;
 }
@@ -160,27 +160,27 @@ h1, h2, h3, h4, h5, h6, a {
 	width: auto;
 }
 .nav-line{
-    stroke-dasharray: 1800;   /* Éè³É´óÓÚµÈÓÚÏß³¤µÄÖµ */
-    stroke-dashoffset: 2500;  /* Æğµã°ÑÏßÍêÈ«Òş²Ø */
+    stroke-dasharray: 1800;   /* è®¾æˆå¤§äºç­‰äºçº¿é•¿çš„å€¼ */
+    stroke-dashoffset: 2500;  /* èµ·ç‚¹æŠŠçº¿å®Œå…¨éšè— */
     animation: nav-line 2s ease infinite;
     stroke:  "white";
     stroke-width: 2;
     fill: none;
-    z-index: 10;   /* ½Ï´óµÄÖµ = ¸ü¿¿ÉÏ */
+    z-index: 10;   /* è¾ƒå¤§çš„å€¼ = æ›´é ä¸Š */
 }
 .canvas-wrap {
-  position: relative;   /* SVG µÄ¶¨Î»²ÎÕÕ */
+  position: relative;   /* SVG çš„å®šä½å‚ç…§ */
   
 }
 .deco {
   position: absolute;
   top: 0;
-  right: 0;             /* ÌùÓÒ±ßÔµ */
-  height: 100%;         /* ×İÏò³ÅÂú canvas */
-  width: auto;          /* ¿í¶È°´ viewBox ±ÈÀı×Ô¶¯Ëã */
-  aspect-ratio: 750 / 1000;  /* ±£ÏÕÆğ¼ûÏÔÊ½ÉùÃ÷±ÈÀı */
-  pointer-events: none; /* ¹Ø¼ü£º²»µ² canvas µÄÊó±êÊÂ¼ş */
-  z-index: 1;           /* ¸ÇÔÚ canvas ÉÏ£»canvas Ä¬ÈÏ z-index:auto */
+  right: 0;             /* è´´å³è¾¹ç¼˜ */
+  height: 100%;         /* çºµå‘æ’‘æ»¡ canvas */
+  width: auto;          /* å®½åº¦æŒ‰ viewBox æ¯”ä¾‹è‡ªåŠ¨ç®— */
+  aspect-ratio: 750 / 1000;  /* ä¿é™©èµ·è§æ˜¾å¼å£°æ˜æ¯”ä¾‹ */
+  pointer-events: none; /* å…³é”®ï¼šä¸æŒ¡ canvas çš„é¼ æ ‡äº‹ä»¶ */
+  z-index: 1;           /* ç›–åœ¨ canvas ä¸Šï¼›canvas é»˜è®¤ z-index:auto */
 }
 .compare{
 		display: grid;
